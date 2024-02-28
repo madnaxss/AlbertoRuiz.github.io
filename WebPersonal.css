@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;500&family=Orbitron:wght@400;500&family=Raleway:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+* {
+    font-family: Merriweather;
+    scroll-behavior: smooth;
+}
+
+.margenes{
+    margin: 40px;
+}
+
+#nav-header {
+    display: flex;
+    align-items: center;
+    width: 98%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+#Iconos
+{
+   position: absolute;
+   right: 4;
+}
+
+#Iconos i
+{
+    font-size: 40px;
+    margin-right: 40px;
+    transition: 1s;
+}
+
+#Iconos i:hover
+{
+    color:#119DA4;
+}
+
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+li
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#linea-menu
+{
+    height: 2px;
+    background-color: aliceblue;
+    width: 0px;
+}
+
+li:hover #linea-menu
+{
+    animation-name: LineaMenu;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes LineaMenu {
+    0%{width: 0;}10%{width: 10%;}20%{width: 20%;}30%{width: 30%;}40%{width: 40%;}50%{width: 50%;}60%{width: 60%;}70%{width: 70%;}80%{width: 80%;}90%{width: 90%;}100%{width: 100%;}
+}
+
+
+.menu1 {
+    text-decoration: none;
+    color: #D7D9CE;
+    font-size: 20px;
+}
+
+.logo, .logo2 {
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D7D9CE;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#TextLogo {
+    font-family: Kodchasan;;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #040404;
+    color: #D7D9CE;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+#Section1 {
+    height: 90vh;
+    background-image: url("img/Fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto1 {
+    background-color: #040404;
+    width: 1200px;
+    height: 550px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#imagenAlberto {
+    padding: 192px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 300px;
+    position: relative;
+    bottom: 38px;
+    background-image: url("img/foto1.png");
+    z-index: 1;
+}
+
+#TextoAlberto {
+    color: #D7D9CE;
+}
+
+
+#Alberto, #WebDeveloper {
+    font-family: Khand;
+    margin: 0;
+    position: relative;
+    left: -400px;
+    letter-spacing: -0.5em;
+    animation-name: NombreAlberto;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#Alberto
+{
+    font-size: 60px; 
+    font-family:Merriweather;
+    font-weight: 100;
+}
+
+
+#WebDeveloper {
+    font-family: Kodchasan;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#foto1:hover #Alberto {
+    letter-spacing: 0;
+    left: 0;
+}
+
+@keyframes NombreAlberto {
+    0%
+    {
+        left: -320px;
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    50%
+    {
+        
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+        left: 0px;
+        letter-spacing: 0em;
+    }
+    
+}
+
+#foto1:hover #WebDeveloper {
+    letter-spacing: 0;
+    left: 0;
+}
+
+
+/*About me*/
+#AboutMe {
+    background-color: #040404;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    font-family: Merriweather;
+    align-items: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+#About {
+    margin-top: 20px; 
+    color: #119DA4;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#TextoAbout {
+    font-size: 15px; 
+    color: #D7D9CE;
+    max-width: 940px;
+}
+
+#imagenes {
+    margin-top: 30px;    
+    display: flex;
+    gap: 5vw; 
+    justify-content: center;
+    width: 100%; 
+}
+
+#imagen1{
+    height: 600px;
+    width: 540px;
+    max-height: 430px;
+    max-width: 430px; 
+    background-color: #343232;
+    border-radius: 15px; 
+    background-image: url('img/foto2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Porfolio*/
+#porfolio {
+    height: 240vh; 
+    background-image: url('img/FondoPorfolio.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#Trabajos {
+    gap: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+#Trabajos1, #Trabajos2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#Trabajos2 {
+    margin-top: 430px; 
+}
+
+.trabajo1,.trabajo2,.trabajo3,.trabajo4 {
+    height: 800px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.trabajo1 a, .trabajo2 a,.trabajo3 a,.trabajo4{
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+#imgTrabajo1,
+#imgTrabajo2,
+#imgTrabajo3,
+#imgTrabajo4 {
+    height: 400px; 
+    width: 384px; 
+    background-color: #D7D9CE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-color: #040404;
+}
+
+#imgTrabajo1
+{
+    background-image: url('img/trabajo1.png');
+}
+
+#imgTrabajo2
+{
+    background-image: url('img/Akinator.png');
+    background-color: #649BFA;
+}
+#imgTrabajo3
+{
+    background-image: url('img/JuegoNavidad.png');
+    background-color: #FC1C04;
+}
+#imgTrabajo4
+{
+    background-image: url('img/TresEnRaya.png');
+    background-color: #F0F0F0;
+}
+.TrabajoText {
+    background-color: #343232;
+    height: 150px; 
+    width: 384px; 
+}
+
+.TrabajoText h2 {
+    margin-left: 10px; 
+    color: #119DA4;
+    font-size: 24px;
+    transition: 1s;
+}
+
+.trabajo1:hover h2, .trabajo2:hover h2, .trabajo3:hover h2, .trabajo4:hover h2
+{
+    color: #D7D9CE;
+}
+
+.TrabajoText p {
+    color: #D7D9CE;
+    margin-left: 20px; 
+    font-size: 17px; 
+}
+
+
+/*Skills*/
+
+#MisSkills {
+    height: 60vh;
+    background-image: url('img/fondoskill.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#Linea {
+    height: 60vh;
+    width: 1px;
+    background-color: #040404;
+    position: absolute;
+}
+
+#Circulo {
+    margin-left: 3px;
+    height: 100px;
+    width: 100px;
+    border-radius: 90px;
+    background-color: #D7D9CE;
+    position: absolute;
+    border: 1px solid black;
+}
+
+
+
+
+#Contenido-Skills {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+}
+
+.Backend h2 {
+    color: #13505B;
+    font-family: Merriweather;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.Frontend h2 {
+    color: #13505B;
+    font-family: Merriweather;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+
+
+/*Formulario*/
+#ContactUs {
+    height: 126vh;
+    background-color: #040404;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#ContactUs h2 {
+    color: #D7D9CE;
+}
+
+.fila {
+    display: flex;
+}
+
+.separador {
+    margin-left: 60px;
+}
+
+textarea {
+    background-color: #343232;
+    outline: none;
+    width: 100%;
+    transform-origin: 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    resize: none;
+    height: 300px;
+    padding-top: 130px;
+    padding-left: 40px;
+    font-size: 20px;
+    color: #D7D9CE;
+    transition: border-color 1s;
+}
+
+textarea:hover {
+    border-color: #119DA4; 
+}
+
+.formulario {
+    gap: 40px;
+}
+
+input {
+    background-color: #343232;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    height: 70px;
+    color: #D7D9CE;
+    border: 2px solid transparent; 
+    transition: border-color 1s; 
+}
+
+input:hover {
+    border-color: #119DA4; 
+}
+
+.container {
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.boton {
+    color: #D7D9CE;
+    background-color: #343232;
+    padding: 20px;
+    width: 120px;
+    border: 2px solid transparent; 
+    border-radius: 10px;
+    transition: border-color 1s; 
+}
+
+::placeholder {
+    font-size: 15px;
+    color: #D7D9CE;
+}
+
+
+.boton:hover {
+    border-color: #119DA4; 
+}
+
+.resaltado
+{
+    color: #119DA4;
+}
+
+#ContactUs h2
+{
+    margin-bottom: 70px;
+    margin-top: -10px;
+    font-family: Merriweather;
+    font-size: 35px;
+}
+
+
+/*footer*/
+
+footer {
+    margin: 0 auto;
+    height: 50vh;
+    background-color: #13505B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-top: 2px solid #119DA4;
+}
+
+#datos {
+    display: flex;
+    gap: 250px;
+}
+
+#datos p {
+    font-family: Kodchasan;
+    color: #D7D9CE;
+}
+
+#linea-horizontal {
+    height: 1px;
+    width: 90%;
+    background-color: #D7D9CE;
+    margin-top: 20px;
+}
+
+.copyright {
+    display: flex;
+    gap: 5px;
+}
+
+.copyright-logo,
+.copyright-text {
+    font-family: Kodchasan;
+    color: #D7D9CE;
+}
+
+@media screen and (max-width: 1400px) {
+    #foto1
+    {
+        width: 1200px;
+    }
+
+    
+    #Alberto
+    {
+        font-size: 55px; 
+        opacity: 1;
+    }
+
+    #WebDeveloper
+    {
+        font-size: 35px;
+        opacity: 1; 
+    }
+
+
+    #Contenido-Skills {
+        gap: 400px;
+    }
+    
+}
+
+.menu2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transform: translateY(150px);
+    left: 4;
+    z-index: 2;
+}
+
+.menu2 li {
+    display: none
+}
+
+.menu-icon {
+    display: none;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1150px) 
+{
+    #MenuUl2, .logo
+    {
+        display: none;
+    }
+    
+    .menu2 {
+        display: none;
+        width: 45%;
+        background-color: #040404;
+    }
+    
+    .menu2 li {
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    
+    #foto1 
+    {
+
+        justify-content: center;
+        flex-direction: column;
+        width: 800px;
+        height: 400px;
+    }
+
+    #Section1
+    {
+        height: 500px;
+    }
+
+    #imagenAlberto
+    {
+        transform: translateY(227px);
+    }
+    #TextoAlberto {
+        margin-top: 300px;
+        transform: translateY(-200px);
+        z-index: 1;
+    }
+    #Alberto {
+        animation-name: none;
+        letter-spacing: 0;
+        position: relative;
+        left: 0;
+        font-size: 30px;
+    }
+    
+    #WebDeveloper {
+        animation-name: none;
+        letter-spacing: 0;
+        position: relative;
+        left: 0;
+        font-size: 20px;
+    }
+    
+
+    #imagen2
+    {
+        display: none;
+    }
+
+    #Trabajos
+    {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 15px;
+        margin-top: 400px;
+        
+    }
+
+    #porfolio
+    {
+        height: 3200px;
+    }
+    #Trabajos2 {
+        margin-top: 0px;
+    }
+    .trabajo
+    {
+        margin-top: -180px;
+    }
+
+    #MisSkills
+    {
+        height: 800px;
+    }
+    #Contenido-Skills {
+        flex-direction: column;
+        gap: 150px;
+    }
+
+    #Contenido-Skills .Backend,.Frontend {
+        text-align: center;
+    }
+
+    #Linea
+    {
+        display: none;
+        height: 400px;
+    }
+    #Linea2 {
+        height: 1px;
+        width: 100%;
+        background-color: #040404;
+        position: absolute;
+    }
+
+    #ContactUs
+    {
+        height: 1100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fila
+    {
+        flex-direction: column;
+        gap:20px;
+
+    }
+    .formulario
+    {
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #ContactUs input
+    {
+        width: 550px;
+        margin-bottom: 20px;
+    }
+
+    #ContactUs textarea
+    {
+        width: 550px;
+        height: 240px;
+        margin-top:20px;
+    }
+
+    #ContactUs .container
+    {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #ContactUs .boton
+    {
+        margin-top: 35px;
+    }
+
+    footer
+    {
+        height: 500px;
+    }
+
+    #datos
+    {
+        gap: 50px
+    }
+
+    
+    .backend
+    {
+        transform: translateX(0);
+    }
+
+    .frontend
+    {
+        transform: translateX(0);
+    }
+    .trabajo1,.trabajo2, .trabajo3, .trabajo4 {
+        transform: translate(0px, 0px);
+    }
+}
+
+@media screen and (max-width: 950px) 
+{
+    #foto1
+    {
+        width: 90%;
+    }
+
+    #ContactUs input
+    {
+        width: 400px;
+    }
+
+    #ContactUs textarea
+    {
+        width: 400px;
+    }
+
+    
+    #Section1{
+        overflow: hidden;
+    }
+}

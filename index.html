@@ -1,0 +1,171 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="WebPersonal.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="menu">
+                <div class="logo">
+                    <p id="TextLogo">AR</p>
+                </div>
+                <div class="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <ul class="menu2">
+                    <li><a href="#AboutMe" class="menu1">About</a><div id="linea-menu"></div></li>
+                    <li><a href="#porfolio" class="menu1">Porfolio</a><div id="linea-menu"></div></li>
+                    <li><a href="#MisSkills" class="menu1">Skills</a><div id="linea-menu"></div></li>
+                    <li><a href="#ContactUs" class="menu1">Contact me</a><div id="linea-menu"></div></li>
+                </ul>
+                <ul id="MenuUl2">
+                    <li><a href="#AboutMe" class="menu1">About</a><div id="linea-menu"></div></li>
+                    <li><a href="#porfolio" class="menu1">Porfolio</a> <div id="linea-menu"></div></li>
+                    <li><a href="#MisSkills" class="menu1">Skills</a> <div id="linea-menu"></div></li>
+                    <li><a href="#ContactUs" class="menu1">Contact me</a> <div id="linea-menu"></div></li>
+                </ul>
+                <div id="Iconos">
+                    <i class='bx bxl-instagram' onclick="IrAInstagram()"></i>
+                    <i class='bx bxl-twitter' onclick="IrATwitter()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Section1">
+        <div id="foto1">
+            <div id="imagenAlberto">
+
+            </div>
+            <div id="TextoAlberto">
+                <h1 id="Alberto">ALBERTO RUIZ</h1>
+                <h2 id="WebDeveloper">WEB DEVELOPER</h2>
+            </div>
+        </div>
+    </section>
+    <section id="AboutMe">
+        <div class="margenes">
+            <h1 id="About">ABOUT ME</h1>
+        <p id="TextoAbout">Me llamo Alberto Ruiz, tengo 19 años, me considero una persona aplicada y comprometida en
+            todo lo que me propongo. Creo que soy una persona con gran capacidad de aprendizaje y siempre estoy
+            dispuesto a mejorar.</p>
+        <div id="imagenes">
+            <div id="imagen1" data-aos="fade-up-right"></div>
+        </div>
+        </div>
+    </section>
+    <section id="porfolio">
+        <div id="Trabajos">
+            <div id="Trabajos1">
+                <div class="trabajo1" data-aos="zoom-out-up" onclick="IrACyberpunk()">
+                    <div id="imgTrabajo1"></div>
+                    <div class="TrabajoText">
+                        <h2>CYBERPUNK FORM</h2>
+                        <p>Formulario ambientado en CYBERPUNK</p>
+                    </div>
+                </div>
+                <div class="trabajo2" data-aos="zoom-out-up" onclick="IrAAkinator()">
+                    <div id="imgTrabajo2"></div>
+                    <div class="TrabajoText">
+                        <h2>AKINATOR</h2>
+                        <p>Akinator de series famosas</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Trabajos2">
+                <div class="trabajo3" data-aos="zoom-out-up" onclick="IrAJocNadal()">
+                    <div id="imgTrabajo3"></div>
+                    <div class="TrabajoText">
+                        <h2>JUEGO NAVIDAD</h2>
+                        <p>Un juego de navidad. Abre regalos sin que te salga carbón</p>
+                    </div>
+                </div>
+                <div class="trabajo4" data-aos="zoom-out-up" onclick="IrATresEnRaya()">
+                    <div id="imgTrabajo4"></div>
+                    <div class="TrabajoText">
+                        <h2>TRES EN RAYA</h2>
+                        <p>Tres en raya usando drag and drop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="MisSkills">
+        <div id="Linea"></div>
+        <div id="Linea2"></div>
+        <div id="Contenido-Skills">
+            <div class="Backend" data-aos="fade-right">
+                <h2 class="backend">BACKEND</h2>
+                <p class="java">Java</p>
+                <p class="c++">C++</p>
+                <p class="php">PHP</p>
+                <p class="javascript">JavaScript</p>
+            </div>
+            <div id="Circulo"></div>
+            <div class="Frontend" data-aos="fade-left">
+                <h2 class="frontend">FRONTEND</h2>
+                <p class="html">HTML</p>
+                <p class="css">CSS</p>
+               <br>
+               <br>
+               <br>
+               <br>
+            </div>
+        </div>
+    </section>
+    <section id="ContactUs">
+        <div class="container">
+            <h2>CONTACT WITH <span class="resaltado">ME</span></h2>
+            <form class="formulario">
+                <div class="fila">
+                    <label for="nombre"> </label>
+                    <input type="text" placeholder="Full Name" required>
+                    <label for="email" class="separador"> </label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="fila">
+                    <label for="email"> </label>
+                    <input type="text" placeholder="Phone" required>
+                    <label for="email" class="separador"> </label>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="TextArea">
+                  <textarea placeholder="Message" required></textarea>
+                </div>
+                <button class="boton">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="datos">
+            <p>Alberto@nax.es</p>
+            <div class="logo2">
+                <p id="TextLogo">AR</p>
+            </div>
+            <p>685 21 50 50</p>
+        </div>
+        <div id="linea-horizontal">
+        </div>
+        <nav id="nav-footer">
+            <ul>
+                <li><a href="#AboutMe" class="menu1">About</a> <div id="linea-menu"></div></li>
+                <li><a href="#MisSkills" class="menu1">Skills</a> <div id="linea-menu"></div></li>
+                <li><a href="#porfolio" class="menu1">Porfolio</a> <div id="linea-menu"></div></li>
+                <li><a href="#ContactUs" class="menu1">Contact me</a> <div id="linea-menu"></div></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <span class="copyright-logo">&#169;</span>
+            <span class="copyright-text">2023 Alberto Ruiz</span>
+          </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="WebPersonal.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
