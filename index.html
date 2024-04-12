@@ -118,23 +118,23 @@
     <section id="ContactUs">
         <div class="container">
             <h2>CONTACT WITH <span class="resaltado">ME</span></h2>
-            <form class="formulario">
+            <form class="formulario" id="miFormulario">
                 <div class="fila">
                     <label for="nombre"> </label>
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="nombre" placeholder="Full Name" required>
                     <label for="email" class="separador"> </label>
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="fila">
                     <label for="email"> </label>
-                    <input type="text" placeholder="Phone" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
                     <label for="email" class="separador"> </label>
-                    <input type="text" placeholder="Subject" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="TextArea">
-                  <textarea placeholder="Message" required></textarea>
+                  <textarea  name="message" placeholder="Message" required></textarea>
                 </div>
-                <button class="boton">ENVIAR</button>
+                <button onclick="MensajeForm()" class="boton">ENVIAR</button>
             </form>
         </div>
     </section>

@@ -258,7 +258,7 @@ header {
 
 /*Porfolio*/
 #porfolio {
-    height: 240vh; 
+    height: 250vh; 
     background-image: url('img/FondoPorfolio.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -270,11 +270,12 @@ header {
 }
 
 #Trabajos {
-    gap: 200px; 
+    gap: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 100px;
+    margin-top: 30px;
 }
 
 #Trabajos1, #Trabajos2 {
@@ -291,6 +292,8 @@ header {
     width: 300px; 
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    
 }
 
 .trabajo1 a, .trabajo2 a,.trabajo3 a,.trabajo4{
